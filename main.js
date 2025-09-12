@@ -1,0 +1,1 @@
+$(function(){console.log('Thumbay Publicity site ready');});
