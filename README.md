@@ -1,0 +1,2 @@
+# thumbay-publicity
+social
