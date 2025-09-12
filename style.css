@@ -1,113 +1,54 @@
-/* ===========================
-   Global Styles
-=========================== */
+/* Background Theme */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   padding-top: 70px;
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
   color: #333;
-  line-height: 1.6;
-  background-color: #f8f9fa;
 }
 
 /* Navbar */
 .navbar {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-}
-.nav-link {
-  margin: 0 8px;
-  transition: color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
 .nav-link:hover {
-  color: #ffc107 !important; /* gold highlight */
+  color: #ffc107 !important;
 }
 
-/* Header / Hero Section */
-header {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('../assets/banner.jpg') center/cover no-repeat;
-  color: #fff;
-  padding: 100px 0;
+/* Hero Carousel */
+header .carousel-item {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+header .carousel-caption {
+  bottom: 200px;
 }
 header h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 header p {
   font-size: 1.25rem;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
 }
 
 /* Section Headings */
-section h2 {
+h2 {
   font-weight: 600;
   margin-bottom: 20px;
-  color: #212529;
   position: relative;
-  display: inline-block;
 }
-section h2::after {
+h2::after {
   content: '';
   display: block;
-  width: 60%;
+  width: 60px;
   height: 3px;
   background: #0d6efd;
   margin: 10px auto 0;
-  border-radius: 2px;
-}
-
-/* Cards (Services Page) */
-.card {
-  border: none;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
-}
-.card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #0d6efd;
-}
-
-/* Footer */
-footer {
-  background: #212529;
-  color: #ccc;
-}
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-footer a {
-  color: #ffc107;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Map Responsive */
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border-radius: 12px;
+  border-radius: 3px;
 }
 
 /* Buttons */
@@ -123,8 +64,8 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-/* Utility */
-.text-center p {
-  max-width: 700px;
-  margin: 0 auto;
+/* Footer */
+footer {
+  background: #212529;
+  color: #bbb;
 }
