@@ -1,16 +1,130 @@
+/* ===========================
+   Global Styles
+=========================== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 70px;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f8f9fa;
 }
-.navbar-brand img {
-  max-height: 48px;
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.hero {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
-.card img {
-  height: 220px;
-  object-fit: cover;
+.nav-link {
+  margin: 0 8px;
+  transition: color 0.3s ease;
 }
+.nav-link:hover {
+  color: #ffc107 !important; /* gold highlight */
+}
+
+/* Header / Hero Section */
+header {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../assets/banner.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+header p {
+  font-size: 1.25rem;
+}
+
+/* Section Headings */
+section h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #212529;
+  position: relative;
+  display: inline-block;
+}
+section h2::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #0d6efd;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Cards (Services Page) */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+/* Footer */
 footer {
-  font-size: 14px;
+  background: #212529;
+  color: #ccc;
+}
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Map Responsive */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 12px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #084298;
+  transform: scale(1.05);
+}
+
+/* Utility */
+.text-center p {
+  max-width: 700px;
+  margin: 0 auto;
 }
