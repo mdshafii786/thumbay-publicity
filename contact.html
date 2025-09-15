@@ -1,10 +1,99 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact — Thumbay Publicity</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css"></head><body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"><div class="container"><a class="navbar-brand" href="index.html">Thumbay Publicity</a></div></nav>
-<main class="py-5"><div class="container"><h2>Contact Us</h2><p>Email: info@thumbaypublicity.com</p><p>Phone: +91 98800 00000</p>
-<div class="ratio ratio-16x9"><iframe src="https://www.google.com/maps?q=12.9141,74.8560&z=14&output=embed" allowfullscreen></iframe></div></div></main>
-<footer class="py-4 bg-white border-top text-center"><small class="text-muted">&copy; 2025 Thumbay Publicity</small></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thumbeja Publicity — Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Thumbeja Publicity</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero (same style as About page) -->
+  <header class="hero bg-primary text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-5">Contact Thumbeja Publicity</h1>
+      <p class="lead">We’d love to connect with you — let’s make something great together.</p>
+    </div>
+  </header>
+
+  <!-- Contact Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="mb-4">Contact Information</h2>
+          <p class="mb-4">Reach out to Thumbeja Publicity for website development, digital marketing, and design services in Mangalore. We’re here to help your brand grow.</p>
+          <ul class="list-unstyled">
+            <li class="mb-3"><i class="fa-solid fa-location-dot me-2 text-primary"></i> Mangalore, Karnataka</li>
+            <li class="mb-3"><i class="fa-solid fa-phone me-2 text-primary"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-envelope me-2 text-primary"></i> info@thumbejapublicity.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-4">Send Us a Message</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map before Footer -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-4">Our Location</h3>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31500.000000000!2d74.874!3d12.914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35bd000000001%3A0x0000000000000000!2sMangalore!5e0!3m2!1sen!2sin!4v0000000000000" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-white border-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small>&copy; <span id="year"></span> Thumbeja Publicity — Mangalore</small>
+      <div>
+        <a href="#" class="me-3 text-muted"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="me-3 text-muted"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-muted"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
