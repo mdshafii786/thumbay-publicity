@@ -84,3 +84,15 @@ footer {
   background: #212529;
   color: #bbb;
 }
+/* Initial hidden state */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Fade & slide in when active */
+.reveal.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-in-out;
+}
