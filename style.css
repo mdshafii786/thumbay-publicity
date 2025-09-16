@@ -86,27 +86,10 @@ footer {
 }
 
 
-/* Match footer background for header */
-.bg-footer {
-  background: linear-gradient(90deg, #0d1b2a, #1b263b); /* adjust to your footer colors */
+
+/* Force header background to match footer */
+.custom-header {
+  background: linear-gradient(90deg, #0d1b2a, #1b263b) !important;
 }
 
-/* Navbar logo */
-.navbar-brand img {
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-.navbar-brand img:hover {
-  transform: rotate(8deg) scale(1.05);
-}
-
-/* Navbar links */
-.navbar-nav .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease-in-out;
-}
-.navbar-nav .nav-link:hover {
-  color: #f39c12 !important; /* golden highlight */
-  transform: translateY(-2px);
 }
