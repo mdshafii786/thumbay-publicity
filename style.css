@@ -87,9 +87,12 @@ footer {
 
 
 
-/* Force header background to match footer */
-.custom-header {
-  background: linear-gradient(90deg, #0d1b2a, #1b263b) !important;
+header {
+  background: #212529;
+  color: #bbb;
+}
+
+
 }
 
 }
