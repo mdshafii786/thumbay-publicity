@@ -8,12 +8,12 @@ body {
 
 /* Navbar */
 .navbar {
-  
-      background: #002147;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+
       
 }
 .nav-link:hover {
-  color: #ffffff !important;
+  color: #ffc107 !important;
 }
 
 /* Hero Carousel */
@@ -23,14 +23,13 @@ header .carousel-item {
   background-size: cover;
   background-position: center;
   position: relative;
-      background: #002147;
+
 
 }
 header .carousel-caption {
   bottom: 200px;
 
-      background: #002147;
-}      
+}
 header h1 {
   font-size: 3rem;
   font-weight: bold;
