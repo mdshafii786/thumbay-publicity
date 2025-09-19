@@ -4,3 +4,12 @@ $(document).ready(function () {
 })
 
 // Scroll animation effect
+
+
+<script>
+  const heroCarousel = document.querySelector('#heroCarousel');
+  const carousel = new bootstrap.Carousel(heroCarousel, {
+    interval: 4000, // 4 seconds
+    ride: 'carousel'
+  });
+</script>
